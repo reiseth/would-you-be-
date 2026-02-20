@@ -1,0 +1,85 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffd6e8, #fff0f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
+    animation: popIn 0.8s ease;
+}
+
+/* Cute entrance animation */
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* GIF */
+.card img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Text */
+h1 {
+    color: #ff4d88;
+    margin-bottom: 25px;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* YES button */
+#yesBtn {
+    background: #ff4d88;
+    color: white;
+}
+
+#yesBtn:hover {
+    background: #ff1f6d;
+    transform: scale(1.1);
+}
+
+/* NO button */
+#noBtn {
+    background: #ffd1dc;
+    color: #ff4d88;
+    position: relative;
+}
